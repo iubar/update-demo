@@ -10,7 +10,7 @@
     "test": "jest --watchAll",
     "test-ci": "jest --ci",
     "test-update": "jest --updateSnapshot  --coverage=false",
-    "lint": "eslint --color --ext .js,.jsx src App.js",
+    "lint": "eslint --color --ext .js,.jsx App.js",
     "lint-fix": "npm run lint -- --fix",
     "lint-quiet": "npm run lint -- --quiet",
     "format": "prettier App.js",
