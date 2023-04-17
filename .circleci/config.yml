@@ -27,5 +27,5 @@ jobs:
       - run:
           name: Publish
           command: |
-            npx expo-cli login -u ${EXPO_USERNAME} -p ${EXPO_PASSWORD}  
-            npx expo-cli publish --non-interactive --quiet --release-channel default
+            npx eas-cli diagnostics
+            npx eas-cli update --non-interactive --branch master --message "New version"
