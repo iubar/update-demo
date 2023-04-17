@@ -6,7 +6,17 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "test": "jest --watchAll",
+    "test-ci": "jest --ci",
+    "test-update": "jest --updateSnapshot  --coverage=false",
+    "lint": "eslint --color --ext .js,.jsx src App.js",
+    "lint-fix": "npm run lint -- --fix",
+    "lint-quiet": "npm run lint -- --quiet",
+    "format": "prettier \"src/**/*{.js,.jsx}\" \"__tests__/**/*{.js,.jsx}\" App.js",
+    "format-write": "npm run format -- --write",
+    "format-check": "npm run format -- --check",
+    "clean-node": "rimraf node_modules"
   },
   "dependencies": {
     "expo": "~48.0.10",
