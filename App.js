@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import * as Updates from 'expo-updates';
 
 export default function App() {
-	onPress = async () => {
+	const onPress = async () => {
 		try {
 			const update = await Updates.checkForUpdateAsync();
 			console.log('checkForUpdateAsync() : ' + JSON.stringify(update));
