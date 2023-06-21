@@ -28,5 +28,4 @@ jobs:
           name: Publish
           command: |
             npx eas-cli diagnostics
-            echo $EXPO_TOKEN
             npx eas-cli update --non-interactive --branch master --message "New version"
