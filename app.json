@@ -26,19 +26,18 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      [
-        "expo-updates",
-        {
-          "username": "account-username"
-        }
-      ]
-    ],
+    "plugins": [],
     "extra": {
       "eas": {
         "projectId": "b2b1716c-beb0-4384-a911-bd6603e39352"
       }
     },
-    "owner": "borgo"
+    "owner": "borgo",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/b2b1716c-beb0-4384-a911-bd6603e39352"
+    }
   }
 }
