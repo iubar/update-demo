@@ -3,6 +3,25 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import * as Updates from 'expo-updates';
 
+/*
+FROM SDK50
+
+import { useUpdates } from 'expo-updates';
+
+export default function App() {
+  const {
+    currentlyRunning,
+    availableUpdate,
+    isUpdateAvailable,
+    isUpdatePending,
+    // and so on!
+  } = useUpdates();
+
+  // etc..
+}
+
+*/
+
 export default function App() {
 	const onPress = async () => {
 		try {
